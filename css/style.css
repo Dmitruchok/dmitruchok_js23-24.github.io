@@ -1,0 +1,113 @@
+body {
+    background-color: #f5f5f5;
+}
+
+.wrapper {
+    width: 300px;
+    margin: 100px auto 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, .6);
+}
+
+.group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    width: 280px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #757575;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: inherit;;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+    border-width: 0;
+    border-radius: 2px;
+    color: #ecf0f1;
+    font-size: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    outline: none;
+    transition: background-color .3s;
+    cursor: pointer;
+}
+
+.btn span {
+    display: block;
+    padding: 5px 50px;
+}
+
+.btn.orange {
+    background-color: #4b1b5b;
+}
+
+.btn.orange:hover {
+    background-color: #c50e95;
+}
+
+.list {
+    padding: 0;
+}
+
+li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    border-bottom: 2px solid #37709d;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+li span {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../img/remove.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.edit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px 10px;
+    border: none;
+    z-index: 5;
+    width: 245px;
+}
+
+.ok {
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    background-image: url('../img/add.png');
+    z-index: 5;
+}
+
+.instruction {
+    margin: 0 auto;
+    width: 160px;
+    font-size: 13px;
+}

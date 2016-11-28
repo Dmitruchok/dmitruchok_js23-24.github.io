@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My homework_js_23-24</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+
+<body>
+    <script type="text/html" id="main-wrapper">
+        <div class="wrapper">
+            <div class="controlls">
+                <div class="group">
+                    <input type="text" class="input" placeholder="Add new notice">
+                    <span class="bar"></span>
+                </div>
+                <button class="add btn orange" type="button">
+                    <span>Add notice</span>
+                </button>
+            </div>
+            <ul class="list"></ul>
+        </div>
+        <div class="instruction">
+            <p>Double-click to edit a todo</p>
+        </div>
+    </script>
+
+    <script type="text/html" id="item-list">
+        <% for (var i = 0; i < data.length; i++) { %>
+            <li class="rewrite" data-index="<%= i %>" data-value="<%= data[i] %>">
+                <%= data[i] %> <span data-value="<%= data[i] %>" class="delete"></span></li>
+            <% }; %>
+    </script>
+
+    <script type="text/html" id="edit-item">
+        <input type="text" class="edit">
+        <span class="ok" data-index="<%= data[0] %>"></span>
+    </script>
+
+    <script data-main="js/main" src="js/require.js"></script>
+</body>
+
+</html>
